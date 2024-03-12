@@ -6,16 +6,19 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
     background-color: #fff;
     max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
-    min-height: 100vh; 
 }
-
+.container{
+    width: 800px;
+    min-height: 800px;
+    border: 5px solid white;
+    margin: 0 auto;
+    background-color: white;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -125,11 +128,7 @@ body {
 
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+   flex-shrink: 0;
     background-color: #333;
     color: #fff;
     padding: 10px;
-}
